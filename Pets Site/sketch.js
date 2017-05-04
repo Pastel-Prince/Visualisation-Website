@@ -1,7 +1,7 @@
 var img;
 var hearts = [];
 var animal = 0; //0 cats, 1 dogs
-var gender = 0; //0 male, 1 female, 2 prefer, 3 other
+var gender = 4; //0 male, 1 female, 2 prefer, 3 other
 var count = 100
 
 function preload(){
@@ -47,6 +47,8 @@ function draw(){
       textSize(48)
       text("30", 470, 420)
       textSize(48)
+    case 4:
+      background(102,220,255)
   }
 
   image(dog,25,250, 73.7*2, 66*2)
@@ -162,7 +164,8 @@ var Heart = function() {
 
     if(gender == 4){
       textSize(24)
-      text("Press Left / Right to change gender", 110, 595  )
+      text("Press Left / Right to change gender", 110, 595-24  )
+      text("Press p to unpause", 190, 595  )
     }
   }
 }
