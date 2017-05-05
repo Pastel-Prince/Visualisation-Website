@@ -47,6 +47,7 @@ function draw(){
       textSize(48)
       text("30", 470, 420)
       textSize(48)
+      break;
     case 4:
       background(102,220,255)
   }
